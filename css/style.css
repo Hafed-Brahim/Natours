@@ -553,6 +553,103 @@ body {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 40px) / 4) + 2 * 40px); }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: fixed;
+  top: 5.5rem;
+  right: 5.5rem;
+  z-index: 2000; }
+
+.navigation__icon {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+    width: 3rem;
+    height: 2px;
+    background-color: #999;
+    z-index: 3000;
+    display: inline-block;
+    position: relative; }
+  .navigation__icon::after, .navigation__icon::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.3s; }
+  .navigation__icon::after {
+    top: 1rem; }
+  .navigation__icon::before {
+    top: -1rem; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  transform: rotate(45deg);
+  top: 0; }
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  transform: rotate(-45deg);
+  top: 0; }
+
+.navigation__background {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.97, -0.03, 0.14, 1.42); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1500;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.97, -0.03, 0.14, 1.42); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation__list {
+  text-align: center;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(125deg, transparent 50%, #fff 50%);
+  background-size: 240%;
+  transition: all 0.3s; }
+
+.navigation__link:hover, .navigation__link:active {
+  color: #55c57a;
+  background-position: 100%;
+  transform: translateX(1rem); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 20rem 0;
