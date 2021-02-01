@@ -36,19 +36,27 @@
                     </li>
 
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Your benifits</a>
+                        <a href="#section-features" class="navigation__link"
+                            >Your benifits</a
+                        >
                     </li>
 
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Popular tours</a>
+                        <a href="#section-tours" class="navigation__link"
+                            >Popular tours</a
+                        >
                     </li>
 
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Stories</a>
+                        <a href="#section-stories" class="navigation__link"
+                            >Stories</a
+                        >
                     </li>
 
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Book now</a>
+                        <a href="#section-booking" class="navigation__link"
+                            >Book now</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -70,12 +78,14 @@
                     >
                 </h1>
 
-                <a href="#" class="btn btn--white">Discover our tours</a>
+                <a href="#section-tours" class="btn btn--white"
+                    >Discover our tours</a
+                >
             </div>
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-about" id="section-abou">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">
                         Exciting tours for advanturous people
@@ -128,7 +138,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
+            <section class="section-features" id="section-features">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -187,7 +197,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-large">
                     <h2 class="heading-secondary">Most popular tours</h2>
                 </div>
@@ -233,7 +243,7 @@
                                         >
                                     </div>
 
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -281,7 +291,7 @@
                                         >
                                     </div>
 
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -329,7 +339,7 @@
                                         >
                                     </div>
 
-                                    <a href="#" class="btn btn--white"
+                                    <a href="#popup" class="btn btn--white"
                                         >Book now!</a
                                     >
                                 </div>
@@ -343,7 +353,7 @@
                 </div>
             </section>
 
-            <section class="section-stories">
+            <section class="section-stories" id="section-stories">
                 <div class="row">
                     <div class="bg-video">
                         <video class="bg-video__content" autoplay muted loop>
@@ -422,7 +432,7 @@
                 </div>
             </section>
 
-            <section class="section-booking">
+            <section class="section-booking" id="section-booking">
                 <div class="booking">
                     <div class="booking__form">
                         <div class="u-margin-bottom-medium">
@@ -538,6 +548,47 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img
+                        src="img/nat-8.jpg"
+                        alt="tour image"
+                        class="popup__image"
+                    /><img
+                        src="img/nat-9.jpg"
+                        alt="tour image"
+                        class="popup__image"
+                    />
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">
+                        Start booking now
+                    </h2>
+                    <h3 class="heading-tertiary">
+                        Important &ndash; please read terms first
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi in tincidunt ligula. Nunc fermentum ac orci eu
+                        facilisis. Nulla facilisis, dolor id iaculis porta, ante
+                        justo hendrerit nisl, sit amet blandit libero lacus
+                        tempor massa. Nunc commodo ipsum ac tellus dignissim
+                        mattis. Phasellus quis diam aliquet, faucibus leo id,
+                        tincidunt justo. Nulla maximus tempus purus interdum
+                        auctor. Phasellus accumsan tincidunt tincidunt. Nunc vel
+                        consectetur sapien. Donec non eros arcu.
+                    </p>
+                    <a
+                        href="#section-tours"
+                        class="btn btn--green u-margin-top-medium"
+                        >Book now</a
+                    >
+                </div>
+            </div>
+        </div>
 
         <!--
         <section class="grid">
